@@ -1,10 +1,12 @@
 // import { useState } from "react";
 // import Inputs from "../../forms/Inputs";
-import carGroup from "/cars/cars.webp";
-import Mask2 from "/cars/Mask2.png";
-import Mask from "/cars/Mask.png";
-import Mask_group1 from "/cars/Mask_group1.png";
+import carGroup from "/cars/car7.jpg";
+// import Mask2 from "/cars/Mask2.png";
+import Mask from "/cars/bmw1.jpg";
+// import Mask_group1 from "/cars/Mask_group1.png";
 import Mask_group2 from "/cars/Mask_group2.png";
+import audi1 from "/cars/audi2.jpg";
+// import audi2 from "/cars/audi2.jpg";
 
 import { Button } from "@material-tailwind/react";
 import { Carousel, Typography } from "@material-tailwind/react";
@@ -89,14 +91,9 @@ const HeroSection = () => {
     //   </div>
     // </div>
 
-    <Carousel
-      className=" overflow-hidden"
-      autoplay
-      autoplayDelay={5000}
-      loop
-    >
-      <div className="flex justify-between overflow-hidden">
-        <div className="lg:pl-28 md:pl-16 p-4 h-[400px] md:h-[300px] bg-blue-100 w-full">
+    <Carousel className=" overflow-hidden" autoplay autoplayDelay={5000} loop>
+      {/* <div className="flex justify-between overflow-hidden">
+        <div className="lg:pl-28 md:pl-16 p-4 h-[600px] md:h-[400px] bg-blue-gray-50 w-full">
           <p className="flex mb-1 justify-center items-center md:justify-start font-[sourceSans] font-semibold text-2xl md:mt-1 md:text-4xl lg:text-4xl opacity-0 animate-slidein [--slidein-delay:300ms]">
             Welcomes to caryanamindia
           </p>
@@ -122,10 +119,10 @@ const HeroSection = () => {
             value={carBrandState}
             type="text"
           /> */}
-          {/* </div> */}
+          {/* </div> 
           <div className="flex justify-center items-center md:justify-start">
             <Button
-            color="lime"
+              color="lime"
               onClick={submitHandler}
               className="mt-2 flex items-center gap-2 animate-slidein [--slidein-delay:950ms] opacity-0"
             >
@@ -155,27 +152,38 @@ const HeroSection = () => {
             className="w-[16rem] hidden md:mt-[5rem] lg:mt-0 md:w-[35rem] lg:w-[50rem] md:block"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className=" w-full h-[400px] overscroll-none">
+
+
+
+
+<div className=" w-full h-[600px] overscroll-none">
         <img
-          src={Mask2}
+          src={carGroup}
           alt="image 2"
-          className="h-[400px] w-full hidden lg:block object-cover absolute"
+          className="h-[600px] w-full  lg:block object-cover absolute"
         />
-        <img
+        {/* <img
           src={Mask_group1}
           className="h-[400px] w-full object-cover block lg:hidden absolute"
+        /> */}
+
+        <img
+          src={carGroup}
+          className="h-[600px] w-full object-cover block lg:hidden absolute"
         />
         <div className="absolute grid h-full w-full">
           <div className="w-full mt-4 md:ml-14 md:w-3/4 lg:ml-16 lg:w-2/4">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 lg:w-3/4 text-black font-[sourceSans] px-7 md:px-2 text-3xl md:text-4xl lg:text-4xl"
-            >
-              The Best Cars For The Best Journey
-            </Typography>
+          <p className="flex mb-1 justify-center text-white  items-center md:justify-start font-[sourceSans] font-semibold text-2xl md:mt-1 md:text-4xl lg:text-4xl opacity-0 animate-slidein [--slidein-delay:300ms]">
+            Welcomes to caryanamindia
+          </p>
+          <p className="flex justify-center mb-1 text-white  items-center md:justify-start text-xl md:mb-3 md:text-2xl lg:text-2xl font-[sourceSans] animate-slidein [--slidein-delay:600ms] opacity-0 ">
+            Your Journey to Exceptional
+          </p>
+          <p className="flex justify-center items-center text-white  md:justify-start text-xl md:text-2xl lg:text-2xl font-[sourceSans] animate-slidein [--slidein-delay:900ms] opacity-0 ">
+            Cars Begins Here!
+          </p>
             {/* <Typography
               variant="lead"
               color="white"
@@ -185,7 +193,7 @@ const HeroSection = () => {
               rental. Enjoy your holiday with us. We make your drive memorable.
             </Typography> */}
             <Button
-             color="lime"
+              color="lime"
               onClick={submitHandler}
               className="mt-2 mx-7 md:mx-3 md:mt-5 lg:mt-12 flex items-center gap-2 animate-slidein [--slidein-delay:950ms] opacity-0"
             >
@@ -209,11 +217,69 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className=" w-full h-[400px] overscroll-none">
+      {/* ********* */}
+      <div className=" w-full h-[600px] overscroll-none">
+        <img
+          src={audi1}
+          alt="image 2"
+          className="h-[600px] w-full  lg:block object-cover absolute"
+        />
+        {/* <img
+          src={Mask_group1}
+          className="h-[400px] w-full object-cover block lg:hidden absolute"
+        /> */}
+
+        <img
+          src={audi1}
+          className="h-[600px] w-full object-cover block lg:hidden absolute"
+        />
+        <div className="absolute grid h-full w-full">
+          <div className="w-full mt-4 md:ml-14 md:w-3/4 lg:ml-16 lg:w-2/4">
+            <Typography
+              variant="h1"
+              color="white"
+              className="mb-4 lg:w-3/4 text-black font-[sourceSans] px-7 md:px-2 text-3xl md:text-4xl lg:text-4xl"
+            >
+              The Best Cars For The Best Journey
+            </Typography>
+            {/* <Typography
+              variant="lead"
+              color="white"
+              className="mb-4 w-3/4 lg:w-[68%] font-[sourceSans] text-black text-sm md:mb-3 md:text-xl lg:text-xl"
+            >
+              We provide best cars with the best prices. We are expert in car
+              rental. Enjoy your holiday with us. We make your drive memorable.
+            </Typography> */}
+            <Button
+              color="lime"
+              onClick={submitHandler}
+              className="mt-2 mx-7 md:mx-3 md:mt-5 lg:mt-12 flex items-center gap-2 animate-slidein [--slidein-delay:950ms] opacity-0"
+            >
+              Get Started{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </Button>
+          </div>
+        </div>
+      </div>
+      {/* ********* */}
+      <div className=" w-full h-[600px] overscroll-none">
         <img
           src={Mask}
           alt="image 2"
-          className="h-[400px] w-full hidden lg:block object-cover absolute"
+          className="h-[600px] w-full hidden lg:block object-cover absolute"
         />
         <img
           src={Mask_group2}
@@ -237,7 +303,7 @@ const HeroSection = () => {
               rental. Enjoy your holiday with us. We make your drive memorable.
             </Typography> */}
             <Button
-             color="lime"
+              color="lime"
               onClick={submitHandler}
               className="mt-2 mx-7 md:mt-5 md:mx-3 lg:mt-12 flex items-center gap-2 animate-slidein [--slidein-delay:950ms] opacity-0"
             >
