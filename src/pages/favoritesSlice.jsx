@@ -20,7 +20,7 @@ export const fetchFavoriteCars = createAsyncThunk(
       'Content-Type': 'application/json'
     };
 
-    const response = await fetch(`https://add.opticalarc.in/saveCar/GetByUser?userId=${UserId}`, {
+    const response = await fetch(`https://becary-production.up.railway.app/saveCar/GetByUser?userId=${UserId}`, {
       method: 'GET',
       headers: headers
     });
