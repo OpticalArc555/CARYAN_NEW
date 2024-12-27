@@ -8,7 +8,7 @@ import Cookies from "js-cookie";
 export const apiSlice = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://becary-production.up.railway.app",
+    baseUrl: "https://becar.up.railway.app",
     prepareHeaders: (headers, { getState }) => {
       // console.log(headers, "prepareHeaders");
       // console.log(getState().auth.token);
